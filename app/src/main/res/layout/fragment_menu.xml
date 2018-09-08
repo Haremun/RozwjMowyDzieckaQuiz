@@ -1,22 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MenuFragment">
 
-    <Button
-        style="@style/RoundedButton"
-        android:text="@string/o_aplikacji"
-        android:backgroundTint="#6ce556"/>
-    <Button
-        style="@style/RoundedButton"
-        android:text="@string/rozpocznij"
-        android:backgroundTint="#56cce5"/>
-    <Button
-        style="@style/RoundedButton"
-        android:text="@string/zakoncz"
-        android:backgroundTint="#56cce5"/>
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Rozwój mowy dziecka\nQuiz"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnAbout"
+            style="@style/RoundedButton"
+            android:backgroundTint="#6ce556"
+            android:text="@string/o_aplikacji" />
+
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/RoundedButton"
+            android:backgroundTint="#56cce5"
+            android:text="@string/rozpocznij" />
+
+        <Button
+            android:id="@+id/btnEnd"
+            style="@style/RoundedButton"
+            android:backgroundTint="#56cce5"
+            android:text="@string/zakoncz" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Studenci Logopedii 3 rok oraz\nstudenci Informatyki 2 rok"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>
