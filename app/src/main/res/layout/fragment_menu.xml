@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:orientation="vertical">
+
+    <Button
+        style="@style/RoundedButton"
+        android:text="@string/o_aplikacji"
+        android:backgroundTint="#6ce556"/>
+    <Button
+        style="@style/RoundedButton"
+        android:text="@string/rozpocznij"
+        android:backgroundTint="#56cce5"/>
+    <Button
+        style="@style/RoundedButton"
+        android:text="@string/zakoncz"
+        android:backgroundTint="#56cce5"/>
+
+</LinearLayout>
