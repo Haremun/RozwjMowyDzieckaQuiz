@@ -18,11 +18,11 @@ import butterknife.Unbinder;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AboutFragment extends Fragment {
+public class SubMenuFragment extends Fragment {
 
     private Unbinder unbinder;
 
-    public AboutFragment() {
+    public SubMenuFragment() {
         // Required empty public constructor
     }
 
@@ -31,22 +31,22 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_about, container, false);
+        View view = inflater.inflate(R.layout.fragment_sub_menu, container, false);
         unbinder = ButterKnife.bind(this, view);
         return view;
-    }
-
-    @OnClick(R.id.btnBack)
-    public void clickBack(){
-        MenuFragment menuFragment = new MenuFragment();
-        FragmentTransaction transaction = Objects.requireNonNull(getActivity()).getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragmentContainer, menuFragment);
-        transaction.commit();
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
+    }
+
+    @OnClick(R.id.btnBack)
+    public void clikcBack(){
+        MenuFragment menuFragment = new MenuFragment();
+        FragmentTransaction transaction = Objects.requireNonNull(getActivity()).getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainer, menuFragment);
+        transaction.commit();
     }
 }

@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_title"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        android:text="Lorem ipsum dolor sit amet, eu duo sensibus maiestatis adversarium, ius quidam aliquip et, no dicunt scribentur theophrastus has. In sed tation vulputate, te eripuit verterem percipitur nec, ea blandit suscipit officiis has. Ius ad hinc assueverit, eu diam quas denique pro, rebum iuvaret voluptua ea usu. Cu enim elit evertitur vix. Est in assentior repudiandae. Noster dissentiunt qui id, invenire principes sea at."
+        android:textSize="16sp"
+        android:padding="15dp" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/RoundedButton"
+            android:minWidth="0dp"
+            android:textColor="#fff"
+            android:backgroundTint="#56cce5"
+            android:padding="3dp"
+            android:text="@string/cofnij_do_menu"
+            android:textAllCaps="false"
+            android:layout_margin="8dp"/>
+        <ImageButton
+            android:contentDescription="@string/navigation_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_button"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            android:backgroundTint="#56cce5"
+            android:layout_margin="8dp"
+            android:padding="3dp"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:contentDescription="@string/navigation_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_button"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:backgroundTint="#56cce5"
+            android:layout_margin="8dp"
+            android:padding="3dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

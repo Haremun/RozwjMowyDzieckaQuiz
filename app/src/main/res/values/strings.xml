@@ -6,4 +6,8 @@
     <string name="o_aplikacji">O aplikacji</string>
     <string name="rozpocznij">Rozpocznij</string>
     <string name="zakoncz">Zakończ</string>
+    <string name="navigation_right">navigation_rigth</string>
+    <string name="navigation_left">navigation_left</string>
+    <string name="cofnij_do_menu">Cofnij do menu</string>
+    <string name="test_title">Test title</string>
 </resources>
