@@ -46,7 +46,12 @@ public class MainActivity extends AppCompatActivity {
                     });
         }
 
-        MenuFragment menuFragment = new MenuFragment();
+        /*MenuFragment menuFragment = new MenuFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentContainer, menuFragment);
+        transaction.commit();*/
+
+        DummyFinalFragment menuFragment = new DummyFinalFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragmentContainer, menuFragment);
         transaction.commit();

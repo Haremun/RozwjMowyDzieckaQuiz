@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DummyQuestionFragment"
+    android:background="#3356cce5">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wypowiedź dziecka w okresie pomiędzy 2. a 3. rokiem życia składa się:"
+        android:layout_margin="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/ans1"
+        android:layout_below="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:minHeight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Ze zdania złożonego np. Mamo chodź pójdziemy dziś do parku, może spotkamy gołębie."
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="#E22"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/ans2"
+        android:layout_below="@+id/ans1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:minHeight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Ze zdania prostego np. Mama daj."
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="#2E2"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/ans3"
+        android:layout_below="@+id/ans2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:minHeight="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Z jednego wyrazu np. Pić"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/rak"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_alignTop="@+id/ans3"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="410dp"
+        android:text="Zła odpowiedź!"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        android:textAlignment="center"
+        android:textColor="#FD6A02"/>
+    <FrameLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/RoundedButton"
+            android:minWidth="0dp"
+            android:backgroundTint="#56cce5"
+            android:padding="3dp"
+            android:text="Następne pytanie"
+            android:textAllCaps="false" />
+    </FrameLayout>
+
+</RelativeLayout>

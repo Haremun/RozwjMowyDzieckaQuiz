@@ -10,7 +10,7 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/test_title"
+        android:text="O Quizie"
         android:textSize="30sp"
         android:textColor="#000"
         android:padding="15dp"
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        android:text="Lorem ipsum dolor sit amet, eu duo sensibus maiestatis adversarium, ius quidam aliquip et, no dicunt scribentur theophrastus has. In sed tation vulputate, te eripuit verterem percipitur nec, ea blandit suscipit officiis has. Ius ad hinc assueverit, eu diam quas denique pro, rebum iuvaret voluptua ea usu. Cu enim elit evertitur vix. Est in assentior repudiandae. Noster dissentiunt qui id, invenire principes sea at."
+        android:text="Quiz przeznaczony jest dla osób dorosłych z dziećmi od 0 do 6 lat. Jego celem jest zweryfikowanie wiedzy rodziców odnośnie wymowy dziecka. Program ten został napisany w języku Java z wykorzystaniem systemu Android. Program uruchamiany jest za pomocą telefonu z systemem Android. Aplikacja zaprojektowana jest w taki sposób aby użytkownik nie miał problemów z jej obsługą."
         android:textSize="16sp"
         android:padding="15dp" />
 

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Rozwój mowy dziecka\nQuiz"
+        android:text="Rozwój mowy dziecka\nQuiz z Rakiem Rerakiem"
         android:textColor="#000"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -51,10 +51,29 @@
             android:text="@string/zakoncz" />
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/rak"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsLayout" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Studenci Logopedii 3 rok oraz\nstudenci Informatyki 2 rok"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsLayout"
+        app:layout_constraintLeft_toRightOf="@+id/rak"
+        android:text="Witajcie!\nJestem Pan Rak Rerak"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="#FD6A02"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Studenci Logopedii 3 rok oraz\nstudenci Informatyki 4 rok"
         android:textSize="12sp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"

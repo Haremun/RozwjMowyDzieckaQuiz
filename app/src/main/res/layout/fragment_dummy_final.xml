@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#3356cce5">
+
+    <ImageView
+        android:id="@+id/rak"
+        android:layout_width="120dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="84dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/rakText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Brawo!\nUdało Ci się zakończyć Quiz!"
+        android:textAlignment="center"
+        android:textColor="#FD6A02"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rak"
+        app:layout_constraintTop_toTopOf="@id/rak" />
+    <TextView
+        android:id="@+id/spacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Twój wynik to:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/rak"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/spacer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="42sp"
+
+            android:textColor="#FD6A02"/>
+
+        <TextView
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/5"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/RoundedButton"
+            android:minWidth="0dp"
+            android:backgroundTint="#56cce5"
+            android:padding="3dp"
+            android:text="@string/cofnij_do_menu"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn2"
+            style="@style/RoundedButton"
+            android:minWidth="0dp"
+            android:backgroundTint="#56cce5"
+            android:padding="3dp"
+            android:text="Spróbuj jeszcze raz"
+            android:textAllCaps="false"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
